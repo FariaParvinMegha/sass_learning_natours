@@ -1,0 +1,81 @@
+.card {
+
+    // basic//////
+    perspective: 150rem;
+    position: relative;
+    height: 50rem;
+
+    &-side {
+        height: 50rem;
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -ms-transition: all .8s ease;
+        -o-transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        border-radius: 3px;
+        overflow: hidden;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+
+        &-front {
+            background-color: $color-white;
+        }
+
+        &-back {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-light-orange, $color-dark-orange);
+            }
+        }
+    }
+
+    &:hover &-side-front {
+        transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        -o-transform: rotateY(-180deg);
+    }
+
+    &:hover &-side-back {
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+    }
+
+    // front side////////////////
+    &-picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &-1 {
+            background-image: linear-gradient(to right bottom, $color-light-orange, $color-dark-orange), url(../img/nat-5.jpg);
+        }
+
+        &-2 {
+            background-image: url(../img/nat-6.jpg);
+        }
+
+        &-3 {
+            background-image: url(../img/nat-6.jpg);
+        }
+    }
+}

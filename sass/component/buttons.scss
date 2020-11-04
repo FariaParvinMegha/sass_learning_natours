@@ -16,7 +16,7 @@
 
     &:link,
     &:visited {
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
@@ -81,4 +81,42 @@
         -o-transform: scaleX(1.4) scaleY(1.6);
         opacity: 0;
     }
+}
+
+.btn-text {
+
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-light-green;
+        display: inline-block;
+        text-decoration: none;
+        padding: 3px;
+        border-bottom: 1px solid $color-light-green;
+        transition: all .4;
+        -webkit-transition: all .4;
+        -moz-transition: all .4;
+        -ms-transition: all .4;
+        -o-transition: all .4;
+}
+
+    &:hover {
+        background-color: $color-light-green;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+        -webkit-transform: translateY(-2px);
+        -moz-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        -o-transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
 }

@@ -4,9 +4,15 @@
 @import "base/animations.scss";
 @import "base/base.scss";
 @import "base/typography.scss";
+@import "base/utilities.scss";
+
 
 @import "layout/header.scss";
 @import "layout/grid.scss";
 
-@import "pages/home.scss";
+@import "pages/sections.scss";
+
 @import "component/buttons.scss";
+@import "component/composition.scss";
+@import "component/feature_box.scss";
+@import "component/card.scss";

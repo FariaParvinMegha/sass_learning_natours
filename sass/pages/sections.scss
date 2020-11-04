@@ -1,0 +1,29 @@
+.section {
+
+    &-about,
+    &-tours {
+        padding: 25rem 0;
+        margin-top: -25vh;
+        background-color: $color-light-grey;
+    }
+
+    &-features {
+        padding: 20rem 0;
+        background-image: linear-gradient(to right bottom, rgba($color-light-green, 0.8), rgba($color-dark-green, 0.8)), url(../img/nat-4.jpg);
+        background-size: cover;
+        transform: skewY(-7deg);
+        -webkit-transform: skewY(-7deg);
+        -moz-transform: skewY(-7deg);
+        -ms-transform: skewY(-7deg);
+        -o-transform: skewY(-7deg);
+        margin-top: -15vh;
+
+        &>* {
+            transform: skewY(8deg);
+            -webkit-transform: skewY(8deg);
+            -moz-transform: skewY(8deg);
+            -ms-transform: skewY(8deg);
+            -o-transform: skewY(8deg);
+        }
+    }
+}
