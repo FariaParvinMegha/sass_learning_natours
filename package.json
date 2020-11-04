@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "learning sass",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css - w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FariaParvinMegha/sass_learning_natours.git"
+  },
+  "author": "Megha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FariaParvinMegha/sass_learning_natours/issues"
+  },
+  "homepage": "https://github.com/FariaParvinMegha/sass_learning_natours#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
