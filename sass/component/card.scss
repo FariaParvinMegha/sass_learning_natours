@@ -3,10 +3,10 @@
     // basic//////
     perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &-side {
-        height: 50rem;
+        height: 52rem;
         transition: all .8s ease;
         -webkit-transition: all .8s ease;
         -moz-transition: all .8s ease;
@@ -40,6 +40,12 @@
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-light-orange, $color-dark-orange);
             }
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-light-green, $color-dark-green);
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-light-blue, $color-dark-blue);
+            }
         }
     }
 
@@ -65,17 +71,96 @@
         height: 23rem;
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
         &-1 {
             background-image: linear-gradient(to right bottom, $color-light-orange, $color-dark-orange), url(../img/nat-5.jpg);
         }
 
         &-2 {
-            background-image: url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, $color-light-green, $color-dark-green), url(../img/nat-6.jpg);
         }
 
         &-3 {
-            background-image: url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, $color-light-blue, $color-dark-blue), url(../img/nat-7.jpg);
         }
+    }
+
+    &-heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+        margin: 0 1rem;
+    }
+
+    &-heading-span {
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+
+        &-1 {
+            background-image: linear-gradient(to right bottom, rgba($color-light-orange, .85), rgba($color-dark-orange, .85));
+        }
+
+        &-2 {
+            background-image: linear-gradient(to right bottom, rgba($color-light-green, .85), rgba($color-dark-green, .85));
+        }
+
+        &-3 {
+            background-image: linear-gradient(to right bottom, rgba($color-light-blue, .85), rgba($color-dark-blue, .85));
+        }
+    }
+
+    &-details {
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-light-grey;
+                }
+            }
+        }
+    }
+
+
+    // back side////////////////////
+    &-cta {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+
+    &-price-box {
+        margin-bottom: 7rem;
+        color: $color-white;
+    }
+
+    &-price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &-price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }
