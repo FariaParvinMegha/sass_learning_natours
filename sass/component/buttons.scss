@@ -97,20 +97,20 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
-        color: $color-light-green;
+        color: $color-medium-green;
         display: inline-block;
         text-decoration: none;
         padding: 3px;
-        border-bottom: 1px solid $color-light-green;
+        border-bottom: 1px solid $color-medium-green;
         transition: all .4;
         -webkit-transition: all .4;
         -moz-transition: all .4;
         -ms-transition: all .4;
         -o-transition: all .4;
-}
+    }
 
     &:hover {
-        background-color: $color-light-green;
+        background-color: $color-medium-green;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
         transform: translateY(-2px);
@@ -127,5 +127,5 @@
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-}
+    }
 }
