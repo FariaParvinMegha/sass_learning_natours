@@ -23,6 +23,7 @@
         animation-fill-mode: backwards;
     }
 
+    &,
     &:link,
     &:visited {
         font-size: $default-font-size;
@@ -41,6 +42,10 @@
         -ms-transition: all .3s;
         -o-transition: all .3s;
         position: relative;
+
+        // for submit btn///////////
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -52,7 +57,9 @@
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-.1rem);
         -webkit-transform: translateY(-.1rem);
         -moz-transform: translateY(-.1rem);
@@ -93,7 +100,6 @@
 }
 
 .btn-text {
-
     &:link,
     &:visited {
         font-size: $default-font-size;
