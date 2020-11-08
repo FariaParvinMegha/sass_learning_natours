@@ -67,10 +67,10 @@
         display: inline-block;
     }
 
-    &-radio-input{
+    &-radio-input {
         display: none;
     }
-    
+
     &-radio-label {
         font-size: $default-font-size;
         cursor: pointer;
@@ -117,10 +117,10 @@
             -moz-transition: opacity .2s;
             -ms-transition: opacity .2s;
             -o-transition: opacity .2s;
-}
+        }
     }
 
-    &-radio-input:checked ~ &-radio-label &-radio-btn::after{
+    &-radio-input:checked~&-radio-label &-radio-btn::after {
         opacity: 1;
     }
 }
