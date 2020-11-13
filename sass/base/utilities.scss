@@ -4,10 +4,17 @@
 
 .u-mb-lg {
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }
 }
 
 .u-mb-md {
     margin-bottom: 4rem !important;
+    @include respond(tab-port) {
+        margin-bottom: 3rem !important;
+    }
 }
 
 .u-mb-sm {

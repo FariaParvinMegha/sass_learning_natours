@@ -14,6 +14,10 @@
     -ms-transition: all .3s;
     -o-transition: all .3s;
 
+    @include respond (tab-port) {
+        padding: 2rem;
+    }
+
     &-icon {
         font-size: 6rem;
         background-image: linear-gradient(to right, $color-light-green, $color-dark-green);
@@ -21,6 +25,10 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+
+        @include respond (tab-port) {
+            margin-bottom: 0;
+        }
     }
 
     &:hover {
