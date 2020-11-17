@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/icon-font.css">
+    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
@@ -30,11 +30,16 @@
         <!-- nav-list -->
         <nav class="navigation-nav">
             <ul class="navigation-list">
-                <li class="navigation-item"><a href="#section-about" class="navigation-link"><span>01</span> About Natours</a></li>
-                <li class="navigation-item"><a href="#section-features" class="navigation-link"><span>02</span> Your benefits</a></li>
-                <li class="navigation-item"><a href="#section-tours" class="navigation-link"><span>03</span> Populer tours</a></li>
-                <li class="navigation-item"><a href="#section-stories" class="navigation-link"><span>04</span> Stories</a></li>
-                <li class="navigation-item"><a href="#section-book" class="navigation-link"><span>05</span> Book Now!</a></li>
+                <li class="navigation-item"><a href="#section-about" class="navigation-link"><span>01</span> About
+                        Natours</a></li>
+                <li class="navigation-item"><a href="#section-features" class="navigation-link"><span>02</span> Your
+                        benefits</a></li>
+                <li class="navigation-item"><a href="#section-tours" class="navigation-link"><span>03</span> Populer
+                        tours</a></li>
+                <li class="navigation-item"><a href="#section-stories" class="navigation-link"><span>04</span>
+                        Stories</a></li>
+                <li class="navigation-item"><a href="#section-book" class="navigation-link"><span>05</span> Book
+                        Now!</a></li>
             </ul>
         </nav>
     </div>
@@ -106,9 +111,25 @@
                 <!-- images -->
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="photo-1" class="composition-photo composition-photo-1">
+
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="photo-1" class="composition-photo composition-photo-1"
+                            >
+
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="photo-2" class="composition-photo composition-photo-2"
+                            >
+                            
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="photo-3" class="composition-photo composition-photo-3"
+                            >
+
+                        <!-- <img src="img/nat-1-large.jpg" alt="photo-1" class="composition-photo composition-photo-1">
                         <img src="img/nat-2-large.jpg" alt="photo-2" class="composition-photo composition-photo-2">
-                        <img src="img/nat-3-large.jpg" alt="photo-3" class="composition-photo composition-photo-3">
+                        <img src="img/nat-3-large.jpg" alt="photo-3" class="composition-photo composition-photo-3"> -->
                     </div>
                 </div>
 
@@ -425,7 +446,10 @@
     <!-- footer -->
     <footer class="footer">
         <div class="footer-logo-box">
-            <img src="img/logo-green-2x.png" alt="Full logo" class="footer-logo">
+            <picture class="footer-logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+            </picture>
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -451,7 +475,8 @@
     <!-- popup -->
     <div class="popup" id="popup">
         <div class="popup-content">
-            <div class="popup-left"><img src="img/nat-8.jpg" alt="tour photo" class="popup-img"><img src="img/nat-9.jpg" alt="tour photo" class="popup-img"></div>
+            <div class="popup-left"><img src="img/nat-8.jpg" alt="tour photo" class="popup-img"><img src="img/nat-9.jpg"
+                    alt="tour photo" class="popup-img"></div>
             <div class="popup-right">
                 <a href="#section-tours" class="popup-close">&times;</a>
                 <h2 class="heading-secondary u-mb-sm">start booking now</h2>
@@ -459,12 +484,12 @@
                 <p class="popup-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     molestiae recusandae asperiores deserunt quos expedita voluptate!
-                    Maiores assumenda perspiciatis amet suscipit quas optio, 
-                    quidem quod nemo dolorem, dolorum enim magnam 
+                    Maiores assumenda perspiciatis amet suscipit quas optio,
+                    quidem quod nemo dolorem, dolorum enim magnam
                     itaque obcaecati ipsum maxime necessitatibus eos impedit molestias.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Ratione atque, fuga cumque incidunt totam architecto libero 
-                    sequi dolore excepturi sapiente modi temporibus nisi quo 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione atque, fuga cumque incidunt totam architecto libero
+                    sequi dolore excepturi sapiente modi temporibus nisi quo
                     impedit eveniet. Odio earum vero tempora.
                 </p>
                 <a href="#" class="btn btn-green"> book now!</a>
